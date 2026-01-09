@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Hotel - लग्जरी स्टे</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #004d99; color: white; padding: 20px; text-align: center; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .booking-form { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .booking-form h2 { text-align: center; }
+        .form-group { margin: 15px 0; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #004d99; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; }
+        button:hover { background: #003366; }
+        .rooms { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .room-card { background: white; width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        .room-card img { width: 100%; height: 200px; object-fit: cover; }
+        .room-card h3 { margin: 10px; }
+        .room-card p { padding: 0 15px; }
+        .about, .contact { background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rio Hotel & Resort</h1>
+        <p>आपका स्वागत है - लग्जरी और आराम का घर</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>रूम बुक करें</h2>
+            <form>
+                <div class="form-group">
+                    <label>चेक-इन डेट</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>चेक-आउट डेट</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>गेस्ट्स की संख्या</label>
+                    <select>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>रूम टाइप</label>
+                    <select>
+                        <option>Standard Room</option>
+                        <option>Deluxe Room</option>
+                        <option>Luxury Suite</option>
+                    </select>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">बुकिंग चेक करें</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Rooms Gallery -->
+        <h2 style="text-align: center;">हमारे रूम्स</h2>
+        <div class="rooms">
+            <div class="room-card">
+                <img src="https://via.placeholder.com/300x200?text=Standard+Room" alt="Standard Room">
+                <h3>Standard Room</h3>
+                <p>₹3000/रात<br>सिंगल/डबल बेड, WiFi, AC</p>
+            </div>
+            <div class="room-card">
+                <img src="https://via.placeholder.com/300x200?text=Deluxe+Room" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>₹5000/रात<br>बालकनी, किंग बेड, ब्रेकफास्ट</p>
+            </div>
+            <div class="room-card">
+                <img src="https://via.placeholder.com/300x200?text=Luxury+Suite" alt="Luxury Suite">
+                <h3>Luxury Suite</h3>
+                <p>₹10000/रात<br>प्राइवेट पूल, फुल सर्विस</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about">
+            <h2>हमारे बारे में</h2>
+            <p>Rio Hotel पटना का सबसे लग्जरी होटल है। हम आपको बेहतरीन सुविधाएं, स्वादिष्ट खाना और शानदार सर्विस देते हैं।</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h2>संपर्क करें</h2>
+            <p>फोन: +91 9876543210<br>ईमेल: info@riohotel.com<br>पता: पटना, बिहार, भारत</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rio Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
